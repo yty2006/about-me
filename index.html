@@ -33,7 +33,7 @@
 								<div class="inner">
 									<div class="content">
 										<h2 class="major">想了解我吗？【About me】</h2>
-										<p>本人诚实肯干，动手与学习能力强，能吃苦耐劳，对学习认真，性格内外兼具，诚恳，虚心好，有耐心，有一定组织与管理能力、枳极地参加各种社会活动。</p>
+										<p>本人诚实肯干，动手与学习能力强，能吃苦耐劳，对工作认真负责，性格内外兼具，诚恳，虚心好，有耐心，有一定组织与管理能力、枳极地参加各种社会活动。</p>
 										<a href="http://www.yty2006.top" class="special">查看详情</a>
 									</div>
 								</div>
@@ -98,7 +98,29 @@
 								<li class="fa-weibo"><a href="https://weibo.com/yty2006">yty2006</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy;www.yty2006.top</li><li>More Templates <a href="http://www.yty2006.top" target="_blank" title="闫天阳的blog">闫天阳的blog</a> - Collect from <a href="http://www.yty2006.top" title="闫天阳的blog" target="_blank">闫天阳的blog</a></li>
+								<li>Made with <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>by 闫天阳</li><li><a href="http://www.yty2006.top" title="闫天阳的blog" target="_blank">闫天阳的blog</a></li>
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  <script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("08/13/2021 23:15:34");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "                                                                                        本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+   </script>
+</div>
 							</ul>
 						</div>
 					</section>
@@ -111,5 +133,7 @@
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+                                                <script type="text/javascript" src="https://yty2006.gitee.io/js/oh.js"></script>
+
 	</body>
 </html>
